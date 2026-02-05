@@ -41,16 +41,24 @@
             --text-xs: 12px;
             --text-xs-line-height: 15px;
         } 
-        .title { @apply text-10xl font-fraunces font-black }
-        h1 { @apply font-fraunces font-black text-7xl  }
-        h2 { @apply font-fraunces font-black text-4xl  }
-        h3 { @apply font-fraunces font-black text-3xl  }
-        h4 { @apply font-fraunces font-black text-2xl  }
-        .body { @apply font-barlow text-base text-dark-blue }
-        nav { @apply font-barlow text-xs text-grey font-bold uppercase tracking-[0.92px]
+        .title { 
+            @apply text-10xl font-fraunces font-black }
+        h1 {
+             @apply font-fraunces font-black text-7xl  }
+        h2 {
+             @apply font-fraunces font-black text-4xl  }
+        h3 {
+             @apply font-fraunces font-black text-3xl  }
+        h4 { 
+            @apply font-fraunces font-black text-2xl  }
+        .body { 
+            @apply font-barlow text-base text-dark-blue }
+        nav {
+             @apply font-barlow text-xs text-grey font-bold uppercase tracking-[0.92px]
             flex items-center gap-[32px]
         }
-        .p{ @apply font-barlow text-light-cream
+        .p{
+             @apply font-barlow text-light-cream
 
         }
         button {
@@ -85,9 +93,8 @@
             @apply  
         rounded-[10px] text-white flex items-center pl-[85px]
         }
-        
-        .footer{ @apply mt-[168px] mb-[88px] bg-dark-blue py-[40px] px-[81px] flex justify-between items-center container mx-auto
-
+        .footer{
+             @apply mt-[168px] mb-[88px] bg-dark-blue py-[40px] px-[81px] flex justify-between items-center container mx-auto
         }
         .div-footer{
             @apply flex gap-[33px] text-xs font-bold text-grey tracking-[0.92px]
@@ -95,12 +102,15 @@
         .heading-3{
                  @apply text-pale-orange text-[72px]
         }
+        .links-social{
+            @apply hover:opacity-70 cursor-pointer
+        }
         
-           </style>
+     </style>
 </head>
 
 <body>
-
+    <!-- header -->
     <header class="flex-between py-[44px] px-[81px]">
         <img src="./images/Group 5.svg" alt="logo" class="w-[235px] h-[26px]">
         <nav class="nav tracking-[0.92px]">
@@ -108,9 +118,9 @@
             <a class="a" href="#">ABOUT US</a>
             <a class="a" href="#">Create your plan</a>
         </nav>
-
-    </header>
+    </header><!-- main -->
     <main class="main px-[79px] pt-[48px]">
+        <!-- section-1 -->
         <section class="section container">
             <div class="max-w-[495px]">
                 <h1 class="h1 mb-[32px]">About Us</h1>
@@ -121,6 +131,7 @@
                 </p>
             </div>
         </section>
+        <!-- section-2 -->
         <section class="pb-[168px] container">
             <div class="flex-around">
                 <img src="./images/Bitmap(1).jpg" alt="image-section">
@@ -138,6 +149,7 @@
                 </div>
             </div>
         </section>
+        <!-- section-3 -->
         <section class="section-2 relative container">
             <div class="flex-between relative pl-[85px]">
 
@@ -158,7 +170,7 @@
 
             </div>
         </section>
-       
+       <!-- section-4 -->
         <section class="mt-[168px]">
             <h3 class="h3 text-grey">Our headquarters</h3>
             <div class="flex-between mx-[8px] mt-[72px]">
@@ -199,13 +211,13 @@ Victoria <br>
         </div>
         <div class="div-footer">
             <a href="https://www.facebook.com/login" target="_blank">
-                <img src="./images/Path.svg" alt="Facebook" class="hover:opacity-70 cursor-pointer">
+                <img src="./images/Path.svg" alt="Facebook" class="links-social">
             </a>
             <a href="https://www.twitter.com/login" target="_blank">
-                <img src="./images/Path(1).svg" alt="Twitter" class="hover:opacity-70 cursor-pointer">
+                <img src="./images/Path(1).svg" alt="Twitter" class="links-social">
             </a>
             <a href="https://www.instagram.com" target="_blank">
-                <img src="./images/Shape.svg" alt="Instagram" class="hover:opacity-70 cursor-pointer">
+                <img src="./images/Shape.svg" alt="Instagram" class="links-social">
             </a>
         </div>
     </footer>
