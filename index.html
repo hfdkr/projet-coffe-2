@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap"
+        rel="stylesheet">
+    <title>Coffeeroasters</title>
+    <style type="text/tailwindcss">
+        @theme{
+            /* colors  */
+            --color-dark-cyan: #0E8784;
+            --color-cyan: #66D2CF;
+            --color-dark-blue: #333D4B;
+            --color-pale-orange: #FDD6BA;
+            --color-light-cream: #FEFCF7;
+            --color-grey: #83888F;
+            --color-disabled: #E2DEDB;
+            --color-abled: #2C343E;
+            /* fonts */
+            --font-barlow: "Barlow", sans-serif;
+            --font-fraunces: "Fraunces", serif;
+            /* text-size  */
+            --text-10xl: 150px;
+            --text-10xl-line-height: 72px;
+            --text-7xl: 72px;
+            --text-7xl-line-height: 72px;
+            --text-4xl: 40px;
+            --text-4xl-line-height: 48px;
+            --text-3xl: 32px;
+            --text-3xl-line-height: 36px;
+            --text-2xl: 24px;
+            --text-2xl-line-height: 32px;
+            --text-base: 16px;
+            --text-base-line-height: 26px;
+            --text-xs: 12px;
+            --text-xs-line-height: 15px;
+        } 
+        .title { @apply text-10xl font-fraunces font-black }
+        h1 { @apply font-fraunces font-black text-7xl  }
+        h2 { @apply font-fraunces font-black text-4xl  }
+        h3 { @apply font-fraunces font-black text-3xl  }
+        h4 { @apply font-fraunces font-black text-2xl  }
+        .body { @apply font-barlow text-base text-dark-blue }
+        nav { @apply font-barlow text-xs text-grey font-bold uppercase tracking-[0.92px]
+            flex items-center gap-[32px]
+        }
+        .p{ @apply font-barlow text-light-cream
+
+        }
+        button {
+            @apply bg-dark-cyan hover:bg-cyan disabled:bg-disabled
+                   text-white font-fraunces font-black text-lg
+                   py-[15px] px-[31px] rounded-md 
+        }
+        .flex-between {
+            @apply flex justify-between items-center
+        }
+        .flex-around {
+            @apply flex justify-around items-center
+        }
+        a{
+            @apply  hover:text-dark-cyan
+        }
+        .section{
+            @apply  bg-[url('./images/Bitmap.jpg')] bg-cover h-[450px] 
+        rounded-[10px] text-white flex items-center pl-[85px]
+        }
+        .main{
+            @apply  mx-auto space-y-[92px] mx-[81px]
+        }
+        .section-2{
+            @apply bg-abled
+        }
+        .img-section-2{
+            @apply w-[445px] h-[474px] absolute top-[-120px] right-[80px]
+        }
+
+        .section-3{
+            @apply  
+        rounded-[10px] text-white flex items-center pl-[85px]
+        }
+        
+        .footer{ @apply mt-[168px] mb-[88px] bg-dark-blue py-[40px] px-[81px] flex justify-between items-center container mx-auto
+
+        }
+        .div-footer{
+            @apply flex gap-[33px] text-xs font-bold text-grey tracking-[0.92px]
+        }
+        .heading-3{
+                 @apply text-pale-orange text-[72px]
+        }
+        
+           </style>
+</head>
+
+<body>
+
+    <header class="flex-between py-[44px] px-[81px]">
+        <img src="./images/Group 5.svg" alt="logo" class="w-[235px] h-[26px]">
+        <nav class="nav tracking-[0.92px]">
+            <a class="a" href="#">HOME</a>
+            <a class="a" href="#">ABOUT US</a>
+            <a class="a" href="#">Create your plan</a>
+        </nav>
+
+    </header>
+    <main class="main px-[79px] pt-[48px]">
+        <section class="section container">
+            <div class="max-w-[495px]">
+                <h1 class="h1 mb-[32px]">About Us</h1>
+                <p class="p">
+                    Coffeeroasters began its journey of exotic discovery in 1999, highlighting stories of coffee from
+                    around the world. We have since been dedicated to bring the perfect cup - from bean to brew - in
+                    every shipment.
+                </p>
+            </div>
+        </section>
+        <section class="pb-[168px] container">
+            <div class="flex-around">
+                <img src="./images/Bitmap(1).jpg" alt="image-section">
+                <div class="">
+                    <h2 class="h2">Our commitment</h2>
+                    <p class="body pt-[36px] max-w-[520px]">We’re built on a simple mission and a commitment to doing
+                        good along the way. We want
+                        to make it easy for you to discover and brew the world’s best coffee at home. It all starts at
+                        the source. To locate the specific lots we want to purchase, we travel nearly 60 days a year
+                        trying to understand the challenges and opportunities in each of these places. We collaborate
+                        with exceptional coffee growers and empower a global community of farmers through with well
+                        above fair-trade benchmarks. We also offer training, support farm community initiatives, and
+                        invest in coffee plant science. Curating only the finest blends, we roast each lot to highlight
+                        tasting profiles distinctive to their native growing region.</p>
+                </div>
+            </div>
+        </section>
+        <section class="section-2 relative container">
+            <div class="flex-between relative pl-[85px]">
+
+                <!-- TEXT -->
+                <div class="pb-[68px]">
+                    <h4 class="h4 pt-[88px] text-light-cream">
+                        Uncompromising quality
+                    </h4>
+                    <p class="p pt-[32px] pb-[126px] max-w-[495px]">
+                        Although we work with growers who pay close attention to all stages of harvest and processing,
+                        we employ, on our end, a rigorous quality control program to avoid over-roasting or baking the
+                        coffee dry.
+                        Every bag of coffee is tagged with a roast date and batch number.
+                    </p>
+                </div>
+                <!-- IMAGE ABSOLUTE -->
+                <img src="./images/Bitmap(2).jpg" alt="Gran Espresso" class="img-section-2">
+
+            </div>
+        </section>
+       
+        <section class="mt-[168px]">
+            <h3 class="h3 text-grey">Our headquarters</h3>
+            <div class="flex-between mx-[8px] mt-[72px]">
+                <div>
+                    <img src="./images/Combined Shape.svg" alt="icon-1">
+                    <h3 class="h3 pt-[46px]">United Kingdom</h3>
+                    <p class="body paragraphe-card pt-[24px]">68  Asfordby Rd <br>
+Alcaston <br>
+SY6 1YA <br>
++44 1241 918425</p>
+                </div>
+                <div>
+                    <img src="./images/Combined Shape(1).svg" alt="icon-2">
+                    <h3 class="h3 pt-[46px]">Canada</h3>
+                    <p class="body paragraphe-card pt-[24px]">1528  Eglinton Avenue <br>
+Toronto <br>
+Ontario M4P 1A6 <br>
++1 416 485 2997</p>
+                </div>
+                <div>
+                    <img src="./images/Combined Shape(2).svg" alt="icon-3">
+                    <h3 class="h3 pt-[46px]">Australia</h3>
+                    <p class="body paragraphe-card pt-[24px]">36 Swanston Street <br>
+Kewell <br>
+Victoria <br>
++61 4 9928 3629</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- footer -->
+    <footer class="footer">
+        <img src="./images/Group 5.png" alt="Coffeeroasters" class="w-[235px] h-[25px]">
+        <div class="div-footer">
+            <a href="#" class="a">HOME</a>
+            <a href="#" class="a">ABOUT US</a>
+            <a href="#" class="a">CREATE YOUR PLAN</a>
+        </div>
+        <div class="div-footer">
+            <a href="https://www.facebook.com/login" target="_blank">
+                <img src="./images/Path.svg" alt="Facebook" class="hover:opacity-70 cursor-pointer">
+            </a>
+            <a href="https://www.twitter.com/login" target="_blank">
+                <img src="./images/Path(1).svg" alt="Twitter" class="hover:opacity-70 cursor-pointer">
+            </a>
+            <a href="https://www.instagram.com" target="_blank">
+                <img src="./images/Shape.svg" alt="Instagram" class="hover:opacity-70 cursor-pointer">
+            </a>
+        </div>
+    </footer>
+    </body>
+
+</html>
